@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <div class="caja">
+        <h1><img id="logo" src="/banner/logo.png" alt="logo-el-universo" /></h1>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/productos.html">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form action="#">
+        <label for="nombreapellidos">Nombre y Apellido</label>
+        <input
+          type="text"
+          id="nombreapellidos"
+          class="input-padron"
+          required
+          placeholder="nombre y apellido" />
+
+        <label for="mail">Correo electronico</label>
+        <input
+          type="mail"
+          id="mail"
+          class="input-padron"
+          required
+          placeholder="email@dominio.com" />
+
+        <label for="telefono">Telefono</label>
+        <input
+          type="tel"
+          id="telefono"
+          class="input-padron"
+          required
+          placeholder="(xx) xxxx xxxx" />
+
+        <label for="texto">Mensaje</label>
+        <textarea
+          name="texto"
+          id="texto"
+          cols="60"
+          rows="10"
+          class="input-padron"
+          required></textarea>
+
+        <fieldset>
+          <!-- se hace referencia a un grupo de datos -->
+          <legend>¿ Por donde quiere ser contactado para la reserva ?</legend>
+
+          <label for="radio-email"
+            ><input
+              type="radio"
+              name="contacto"
+              id="radio-email"
+              value="email" />Email</label
+          >
+
+          <label for="radio-telefono">
+            <input
+              type="radio"
+              name="contacto"
+              id="radio-telefono"
+              value="Telefono" />Telefono</label
+          >
+
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              name="contacto"
+              id="radio-whatsapp"
+              value="whatsapp"
+              checked />Whatsapp</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>¿ En cual horario quiere tener el recorrido ?</legend>
+          <select name="select" id="select">
+            <option value="">Mañana</option>
+            <option value="">Tarde</option>
+            <option value="">Noche</option>
+          </select>
+        </fieldset>
+
+        <label class="checkbox">
+          <input type="checkbox" checked />
+          ¿ Le gustaria recibir las ultimas novedades ?
+        </label>
+
+        <input type="submit" value="Enviar" class="enviar" />
+      </form>
+
+      <table>
+        <thead>
+          <!-- encabesado de una tabla -->
+          <tr>
+            <th>Dias</th>
+            <th>Horario</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- cuerpo de una tabla -->
+          <tr>
+            <td>Viernes</td>
+            <td>8 am- 22 pm</td>
+          </tr>
+          <tr>
+            <td>Sabado</td>
+            <td>8 am- 22 pm</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>8 am- 22 pm</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <footer>
+      <img id="logo" src="/banner/logo.png" alt="logo-footer" />
+      <p class="copy">&copy Copyright EL UNIVERSO - 2022</p>
+    </footer>
+  </body>
+</html>

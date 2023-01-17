@@ -1,0 +1,167 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*header*/
+
+header {
+  background-image: url(/banner/header.png);
+  background-size: cover;
+  padding: 20px 0;
+}
+
+.caja {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+#logo {
+  width: 200px;
+}
+nav {
+  position: absolute;
+  top: 125px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 25px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: darkorange;
+  text-decoration: underline;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  background-image: url(/banner/nada.png);
+  padding: 15px;
+}
+
+.copy {
+  color: white;
+  font-size: 13px;
+}
+
+/*pagina principal */
+
+.banner {
+  width: 100%;
+}
+
+.principal {
+  padding: 3em 0;
+  background: #fefefe;
+  margin: 0 150px 0 150px;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+.titulo-principal::first-letter {
+  font-weight: bold;
+}
+
+p:first {
+  font-style: italic;
+}
+
+.principal p {
+  margin: 0 0 1em;
+  align-items: center;
+}
+.principal strong {
+  font-weight: bold;
+}
+
+.utencilio {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.mapa {
+  padding: 3em 0;
+  margin: 0 auto;
+  background: linear-gradient(#fefefe, #888);
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.mapa-contenido {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.option-items {
+  padding: 3em 0;
+  background: #888;
+}
+
+.contenido-planetas {
+  width: 640px;
+  margin: 0 auto;
+}
+.imageneDiferencial {
+  width: 60%;
+  transition: 400ms;
+  box-shadow: 10px 10px 20px 2px #000;
+}
+
+.imageneDiferencial:hover {
+  opacity: 50%;
+}
+.lista {
+  width: 39%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.items {
+  line-height: 3.4;
+}
+
+.items::before {
+  content: '✵ ';
+}
+/*es para el primer hijo */
+.items:first-child {
+  font-weight: bold;
+}
+
+.video {
+  width: 560px;
+  margin: 1em auto;
+}
+
+.seccion-video {
+  background: linear-gradient(#fefefe, #888);
+}
+
+@media screen and (max-width: 480px) {
+  .caja,
+  .principal,
+  .mapa-contenido,
+  .contenido-planetas,
+  .video {
+    width: auto;
+  }
+}
